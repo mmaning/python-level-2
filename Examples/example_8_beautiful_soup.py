@@ -3,7 +3,7 @@ Documentation: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 """
 from bs4 import BeautifulSoup
 
-with open('data/google.html', 'r') as file:
+with open('/Users/nima/github/python-level-2/Examples/data/google.html', 'r') as file:
     html_doc = ''
     for line in file:
         html_doc += line

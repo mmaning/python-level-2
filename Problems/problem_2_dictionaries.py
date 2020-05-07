@@ -12,3 +12,10 @@ code = {
 message = input("What is your message? ")
 
 # Todo: Translate user input into code of numbers
+coded_message = ''
+for char in message.lower():       # conver string to lowercase
+    char_code=code.get(char, char) # if char in dictionary then return value, otherwise return char
+    print(char_code)
+    coded_message += str(char_code)
+print(coded_message)
+

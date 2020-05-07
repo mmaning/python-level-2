@@ -15,7 +15,7 @@ response = requests.get(URL, headers=headers)
 print(response.status_code)
 
 # Get text contents
-print(response.text)
+#print(response.text)
 
-with open('data/google.html', 'w') as file:
+with open('/Users/nima/github/python-level-2/Examples/data/google.html', 'w') as file:
     file.write(response.text)

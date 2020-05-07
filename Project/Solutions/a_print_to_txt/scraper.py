@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 URL = "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
 
 # Update with your info
-name = None
-email = None
+name = "Ning"
+email = "mmaning@gmail.com"
 assert name and email
 
 headers = {'User-Agent': f'{name} ({email})'}
@@ -31,6 +31,6 @@ for row in table.find_all('tr'):
 
 print(countries)
 
-with open('countries.txt', 'w') as output:
+with open('countries1.txt', 'w') as output:
     for country in countries:
         output.write(country + '\n')
